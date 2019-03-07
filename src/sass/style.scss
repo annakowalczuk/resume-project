@@ -1,0 +1,116 @@
+@import url( 'https://fonts.googleapis.com/css?family=Roboto+Condensed');
+@import url('../vendor/bootstrap-grid.css');
+
+$custom-gray-light:#F7F7F7;
+$custom-gray: #818485;
+$custom-blue: #86d9f7;
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-size: 1em;
+  line-height: 1.5em;
+  font-family: 'Roboto Condensed', sans-serif;
+  color: $custom-gray;
+}
+
+h3 {
+  text-transform: uppercase;
+  font-size: 1.5em;
+
+  &::after {
+    content: "";
+    display: block;
+    width: 80%;
+    height: 1px;
+    margin-top: 8px;
+    background-color: $custom-gray;
+  }
+}
+
+.title {
+  text-transform: uppercase;
+  font-size: 0.9375em;
+}
+
+.name {
+  color: $custom-blue;
+  text-transform: uppercase;
+}
+
+.data {
+  font-size: smaller;
+}
+
+.description {
+  margin-bottom: 20px;
+}
+
+.background-dark{
+  background-color: $custom-gray-light;
+}
+
+.image {
+  max-width: 230px;
+  height: 230px;
+  border-radius: 50%;
+  background-image: url('../images/my-photo-bw.jpg');
+  background-size: cover;
+  background-position: center;
+  margin: 30px auto;
+}
+
+.section--contact {
+  padding: 75px 30px;
+}
+
+.contact-title {
+  font-size: 3.25em;
+  line-height: initial;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.contact-details {
+  font-size: 1.125em;
+
+  ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    li {
+      display: inline-flex;
+      position: relative;
+
+      a {
+        text-decoration: none;
+        color: inherit;
+
+        &:hover {
+          cursor: pointer;
+          color: $custom-blue;
+        }
+      }
+
+      &:not(:first-of-type) {
+        margin-left: 16px;
+      }
+
+      &:not(:first-of-type)::after {
+        content: "";
+        position: absolute;
+        left: -9px;
+        height: 100%;
+        width: 1px;
+        background-color: $custom-gray;
+      }
+    }
+  }
+}
+
+.skilss .title {
+  color: $custom-blue;
+}
