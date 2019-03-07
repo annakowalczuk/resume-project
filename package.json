@@ -7,6 +7,7 @@
     "type": "git",
     "url": "git@github.com:annakowalczuk/resume-project.git"
   },
+  "homepage": "https://annakowalczuk.github.io/resume-project/",
   "scripts": {
     "init-project": "npm install && npm-run-all init:*",
     "init:dirs": "mkdirp src/images src/sass src/css src/vendor src/scripts",
@@ -29,7 +30,8 @@
     "build:sass": "node-sass src/sass/style.scss --output-style compressed -o dist/css",
     "start": "npm-run-all -p start:*",
     "start:sass": "node-sass src/sass/style.scss --source-map true -w -o src/css",
-    "start:browsersync": "browser-sync start --server src --files ./ --logLevel debug"
+    "start:browsersync": "browser-sync start --server src --files ./ --logLevel debug",
+    "deploy": "gh-pages -d dist"
   },
   "keywords": [],
   "author": "Anna Kowalczuk",
@@ -37,6 +39,7 @@
   "devDependencies": {
     "browser-sync": "^2.26.3",
     "cpy-cli": "^2.0.0",
+    "gh-pages": "^2.0.1",
     "node-sass": "^4.11.0",
     "npm-run-all": "^4.1.5",
     "onchange": "^4.1.0",
