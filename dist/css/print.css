@@ -1,0 +1,242 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto+Condensed");
+* {
+  box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-size: 0.875em;
+  line-height: 1.25em;
+  font-family: 'Roboto Condensed', sans-serif;
+  color: #757575;
+  background: #7B7F88; }
+
+.resume {
+  width: 100%;
+  max-width: 800px;
+  background: #fff;
+  margin: 30px auto; }
+
+h3 {
+  text-transform: uppercase;
+  font-size: 1.5em;
+  margin: 15px 0; }
+
+.title {
+  text-transform: uppercase;
+  font-size: 0.9375em; }
+
+.name {
+  color: #009ADB;
+  text-transform: uppercase; }
+
+.data {
+  font-size: smaller; }
+
+.description {
+  margin-bottom: 15px; }
+
+.image {
+  max-width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  background-image: url("../images/my-photo-bw.jpg");
+  background-size: cover;
+  background-position: center;
+  margin: 30px auto; }
+
+.section--contact {
+  padding: 0 30px; }
+
+.section--about {
+  padding: 0 15px; }
+
+.contact-title {
+  font-size: 2.25em;
+  line-height: initial;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin: 30px 0 20px; }
+
+.contact-details {
+  font-size: 1.125em; }
+  .contact-details ul {
+    padding: 0;
+    margin: 0;
+    list-style: none; }
+    .contact-details ul li {
+      display: block;
+      position: relative; }
+      .contact-details ul li a {
+        text-decoration: none;
+        color: inherit; }
+        .contact-details ul li a:hover {
+          cursor: pointer;
+          color: #009ADB; }
+
+.skilss .title {
+  color: #009ADB; }
+
+.container {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto; }
+
+.container-fluid {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto; }
+
+.row {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px; }
+
+.col-print-1 {
+  position: relative;
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px; }
+
+.col-print-2 {
+  position: relative;
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px; }
+
+.col-print-3 {
+  position: relative;
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px; }
+
+.col-print-4 {
+  position: relative;
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px; }
+
+.col-print-5 {
+  position: relative;
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px; }
+
+.col-print-6 {
+  position: relative;
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px; }
+
+.col-print-7 {
+  position: relative;
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px; }
+
+.col-print-8 {
+  position: relative;
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px; }
+
+.col-print-9 {
+  position: relative;
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px; }
+
+.col-print-10 {
+  position: relative;
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px; }
+
+.col-print-11 {
+  position: relative;
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px; }
+
+.col-print-12 {
+  position: relative;
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px; }
+
+.col-print-1 {
+  -ms-flex: 0 0 8.333333%;
+  flex: 0 0 8.333333%;
+  max-width: 8.333333%; }
+
+.col-print-2 {
+  -ms-flex: 0 0 16.666667%;
+  flex: 0 0 16.666667%;
+  max-width: 16.666667%; }
+
+.col-print-3 {
+  -ms-flex: 0 0 25%;
+  flex: 0 0 25%;
+  max-width: 25%; }
+
+.col-print-4 {
+  -ms-flex: 0 0 33.333333%;
+  flex: 0 0 33.333333%;
+  max-width: 33.333333%; }
+
+.col-print-5 {
+  -ms-flex: 0 0 41.666667%;
+  flex: 0 0 41.666667%;
+  max-width: 41.666667%; }
+
+.col-print-6 {
+  -ms-flex: 0 0 50%;
+  flex: 0 0 50%;
+  max-width: 50%; }
+
+.col-print-7 {
+  -ms-flex: 0 0 58.333333%;
+  flex: 0 0 58.333333%;
+  max-width: 58.333333%; }
+
+.col-print-8 {
+  -ms-flex: 0 0 66.666667%;
+  flex: 0 0 66.666667%;
+  max-width: 66.666667%; }
+
+.col-print-9 {
+  -ms-flex: 0 0 75%;
+  flex: 0 0 75%;
+  max-width: 75%; }
+
+.col-print-10 {
+  -ms-flex: 0 0 83.333333%;
+  flex: 0 0 83.333333%;
+  max-width: 83.333333%; }
+
+.col-print-11 {
+  -ms-flex: 0 0 91.666667%;
+  flex: 0 0 91.666667%;
+  max-width: 91.666667%; }
+
+.col-print-12 {
+  -ms-flex: 0 0 100%;
+  flex: 0 0 100%;
+  max-width: 100%; }
+
+.container-fluid, .container {
+  width: auto; }
+
+.print-hidden {
+  display: none; }
+
+a[href]:after {
+  content: attr(href); }
+
+/*# sourceMappingURL=print.css.map */

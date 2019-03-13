@@ -8,143 +8,172 @@
   <meta name="author" content="Anna Kowalczuk">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link href="css/style.css" media="all" rel="stylesheet" type="text/css" />
+  <link href="css/print.css" media="print" rel="stylesheet" type="text/css" />
 </head>
 
 <body>
+  <div class="resume">
   <header class="container-fluid">
     <div class="row">
-      <section class="col-sm-4 background-dark">
+
+      <section class="col-md-4 col-print-4 background-dark">
         <div class="image">
         </div>
       </section>
-      <section class="col-sm-8 section--contact">
+
+      <section class="col-md-8 col-print-8 section--contact">
         <h1 class="contact-title">Anna Kowalczuk</h1>
         <article class="contact-details">
           <ul>
             <li>
-              <a href="mailto:anna@kowalczuk.eu">anna@kowalczuk.eu</a>
+              <a href="mailto:anna@kowalczuk.eu"><span class="print-hidden">anna@kowalczuk.eu</span></a>
             </li>
             <li>
-              <a href="tel:+48602551881">+48 602551881</a>
+              <a href="tel:+48602551881"><span class="print-hidden">+48 602551881</span></a>
             </li>
             <li>Gdańsk</li>
             <li>
-              <a href="https://www.linkedin.com/in/anna-kowalczuk/" target="_blank" title="LinkedIn profil">LinkedIn</a>
+              <a href="https://www.linkedin.com/in/anna-kowalczuk/" target="_blank" title="LinkedIn profil"><span class="print-hidden">LinkedIn</span></a>
             </li>
             <li>
-              <a href="https://github.com/annakowalczuk" target="_blank" title="GitHub profil">GitHub</a>
+              <a href="https://github.com/annakowalczuk" target="_blank" title="GitHub profil"><span class="print-hidden">GitHub</span></a>
             </li>
           </ul>
         </article>
       </section>
+
     </div>
   </header>
   <main class="container-fluid">
     <div class="row">
-      <div class="col-sm-4 background-dark">
-        <section>
-          <h3>Cel zawodowy</h3>
-          <article class="description">Moim celem zawodowym jest praca na stanowisku front-end developera.
-            Intensywnie poszerzam swoją wiedzę i umiejętności aby zwiększać kompetencje
-            umożliwiające tworzenie aplikacji webowych używając JavaScriptu w warstwie
-            front-endu.
+      <div class="col-md-4 col-print-12 background-dark">
+
+        <!-- About me -->
+        <section class="section--about">
+          <h3>O mnie</h3>
+          <article class="description">Rozwijanie i doskonalenie się sprawia mi satysfakcję. Lubię rozwiązywać
+            problemy, jestem dociekliwa i dokładna, a programowanie jest dziedziną, w której mogę wykorzystać te cechy.
+            Hobbystycznie od dawna interesowałam się działaniem stron internetowych. Postanowiłam połączyć moje
+            zainteresowania z pracą i zmienić swoją ścieżkę zawodową. Ukończyłam intensywny kurs Web Developmentowy
+            oraz samodzielnie poszerzam swoją wiedzę i umiejętności. Moim celem jest doskonalenie się w tworzeniu
+            aplikacji webowych używając JavaScriptu w warstwie front-endu.
           </article>
         </section>
+
+        <!-- Hobbies -->
+        <section class="print-hidden">
+          <h3>Zainteresowania</h3>
+          <article>Kajakarstwo turystyczne i zwałkowe, strategiczne gry planszowe 4X
+          </article>
+        </section>
+
+      </div>
+      <div class="col-md-8 col-print-12">
+
         <!-- Skilss -->
-        <section>
-          <h3>Umiejętności</h3>
-          <article class="skilss">
-            <div class="title">HTML5, CSS3, RWD, Bootstrap, Sass, JavaScript (ES6)</div>
-            <div class="description">tworzenie responsywnych stron internetowych na
+        <section class="container">
+            <h3>Umiejętności</h3>
+          <article class="row skilss">
+                  <div class="col-md-4 col-print-4 title">HTML5, CSS3, RWD, Bootstrap, Sass, JavaScript (ES6)</div>
+            <div class="col-md-8 col-print-8 description">tworzenie responsywnych stron internetowych na
               podstawie projektów graficznych z elementami logiki po stronie front-endu</div>
           </article>
-          <article class="skilss">
-            <div class="title">MERN</div>
-            <div class="description">operacje typu CRUD w MongoDB, przygotowanie routingu,
+          <article class="row skilss">
+              <div class="col-md-4 col-print-4 title">MERN</div>
+            <div class="col-md-8 col-print-8 description">operacje typu CRUD w MongoDB, przygotowanie routingu,
               tworzenie aplikacji webowych z wykorzystaniem React i Redux</div>
           </article>
-          <article class="skilss">
-            <div class="title">Git, Webpack, Jira, Postman</div>
-            <div class="description">korzystanie z narzędzi zwiększających produktywność pracy</div>
+          <article class="row skilss">
+              <div class="col-md-4 col-print-4 title">Git, Webpack, Jira, Postman</div>
+            <div class="col-md-8 col-print-8 description">korzystanie z narzędzi zwiększających produktywność pracy</div>
           </article>
-          <article class="skilss">
-            <div class="title">Język angielski</div>
-            <div class="description">znajomość w stopniu komunikatywnym oraz umożliwiająca
+          <article class="row skilss">
+              <div class="col-md-4 col-print-4 title">Język angielski</div>
+            <div class="col-md-8 col-print-8 description">znajomość w stopniu komunikatywnym oraz umożliwiająca
               rozumienie dokumentacji technicznej</div>
           </article>
-          <!-- Hobbies -->
-          <section>
-            <h3>Zainteresowania</h3>
-            <article>Kajakarstwo turystyczne i zwałkowe, strategiczne gry planszowe 4X
-            </article>
-          </section>
-      </div>
-      <div class="col-sm-8">
+        </section>
+
         <!-- Courses -->
         <section class="container">
           <h3>Kursy</h3>
           <article>
             <div class="row">
-              <div class="col-sm-4 title">Bootcamp Web Developer Plus</div>
-              <div class="col-sm-8 name">Codemy S.A.</div>
+              <div class="col-md-4 col-print-4 title">Bootcamp Web Developer Plus</div>
+              <div class="col-md-8 col-print-8 name">Codemy S.A.</div>
             </div>
             <div class="row">
-              <div class="col-sm-4 data">maj 2018 - styczeń 2019</div>
-              <div class="col-sm-8">
-                W trakcie kursu poznałam technologie: HTML5, CSS3, RWD, Bootstrap, Sass, Git,
-                jQuery, AJAX, JavaScript ES6, Node, React, Express, Redux, MongoDB, MERN, Jira,
-                Kanban. Wykonałam kilkadziesiąt zadań i 2 większe samodzielne miesięczne
-                projekty oraz projekt zespołowy, którego istotnym elementem było wzajemne code
-                review i prowadzony był w metodyce Kanban.
+              <div class="col-md-4 col-print-4 data">maj 2018 - styczeń 2019</div>
+              <div class="col-md-8 col-print-8">
+                W trakcie kursu poznałam technologie: HTML5, CSS3, RWD, Bootstrap, Sass, Git, jQuery, AJAX, JavaScript
+                ES6, Node, React, Express, Redux, MongoDB, MERN, Jira, Kanban. Wykonałam kilkadziesiąt zadań, dwa
+                większe samodzielne miesięczne projekty oraz projekt zespołowy, którego istotnym elementem było
+                wzajemne code review i prowadzony był w metodyce Kanban.
+                W trakcie kursu otrzymywałam stałe wsparcie indywidualnego mentora, który wykonywał code review
+                rozwiązań moich zadań pokazując dobre praktyki programistyczne oraz dawał mi praktyczne wskazówki
+                wynikające z jego doświadczenia. W czasie kursu kładziony był duży nacisk na samodzielne poszukiwanie
+                rozwiązań zadanych problemów i praktyczne wykorzystanie przekazywanej wiedzy.
+
               </div>
             </div>
           </article>
         </section>
+
         <!-- Experience-->
         <section class="container">
           <h3>Doświadczenie</h3>
           <article>
             <div class="row">
-              <div class="col-sm-4 title">
+              <div class="col-md-4 col-print-4 title">
                 Specjalista ds. Likwidacji Szkód
               </div>
-              <div class="col-sm-8 name">Sopockie Towarzystwo Ubezpieczeniowe ERGO Hestia S.A.</div>
+              <div class="col-md-8 col-print-8 name">Sopockie Towarzystwo Ubezpieczeniowe ERGO Hestia S.A.</div>
 
             </div>
             <div class="row">
-              <div class="col-sm-4 data">Grudzień 2007 – aktualnie</div>
-              <div class="col-sm-8 description">
-                Pracę rozpoczynałam na stanowisku referenta i zajmowałam się analizą
-                dokumentacji niezbędnej dla oceny zasadności i weryfikacji roszczeń,
+              <div class="col-md-4 col-print-4 data">Grudzień 2007 – aktualnie</div>
+              <div class="col-md-8 col-print-8 description">
+                Wykonywałam analizę dokumentacji niezbędnej dla oceny zasadności i weryfikacji roszczeń,
                 współpracowałam z klientami oraz podmiotami zewnętrznymi, raportowałam wyniki.
-                Awansując na kolejne stanowiska (młodszego specjalisty, a następnie specjalisty)
-                otrzymywałam dodatkowe pełnomocnictwa oraz obowiązki, takie jak wdrażanie nowych
-                pracowników, kosztorysowanie wybranych szkód, obsługę klientów VIP.
               </div>
             </div>
           </article>
           <article>
             <div class="row">
-            <div class="col-sm-4 title">
-              Specjalista ds. obsługi klientów
+              <div class="col-md-4 col-print-4 title">
+                Specjalista ds. obsługi klientów
+              </div>
+              <div class="col-md-8 col-print-8 name">Kajaki.pl M. Panek, T. Plitnik s.c.</div>
             </div>
-            <div class="col-sm-8 name">Kajaki.pl M. Panek, T. Plitnik s.c.</div>
-          </div>
-          <div class="row">
-          <div class="col-sm-4 data">Czerwiec 2002 – Listopad 2007</div>
-            <div class="col-sm-8 description">
-              Zajmowałam się administrowaniem i kompleksową obsługą biura. Obsługiwałam
-              klientów indywidualnych (w tym zagranicznych) oraz biznesowych. Organizowałam
-              plan zadań pracowników terenowych. Reprezentowałam firmę na targach o tematyce
-              turystycznej i sportowej.
+            <div class="row">
+              <div class="col-md-4 col-print-4 data">Czerwiec 2002 – Listopad 2007</div>
+              <div class="col-md-8 col-print-8 description">
+                Zajmowałam się administrowaniem i kompleksową obsługą biura.
+              </div>
             </div>
-          </div>
           </article>
         </section>
+
+        <!-- Hobbies -->
+        <section class="container screen-hidden">
+            <h3>Zainteresowania</h3>
+            <article class="row">
+              <div class="col-print-12">
+              Kajakarstwo turystyczne i zwałkowe, strategiczne gry planszowe 4X
+            </div>
+            </article>
+          </section>
+
       </div>
     </div>
   </main>
+  <footer>
+    <section>
+     <p>Wyrażam zgodę na przetwarzanie podanych przeze mnie moich danych osobowych przez *(podajemy pełną nazwę firmy oraz jeżeli firma ma inne spółki, w których posiadaniu jest firma i będzie przetwarzała dane osobowe)*, z siedzibą przy *(pełny adres siedziby firmy, łącznie z kodem pocztowym)* w celu realizacji tego i przyszłych procesów rekrutacji zgodnie z przepisami rozporządzenia Parlamentu Europejskiego i Rady (UE) 2016/679 z 27 kwietnia 2016 r. w sprawie ochrony osób fizycznych w związku z przetwarzaniem danych osobowych i w sprawie swobodnego przepływu takich danych oraz uchylenia dyrektywy 95/46/WE (Dz.Urz. UE L 119 z 4.5.2016 r.). Oświadczam, że zostałam/zostałem powiadomiona/powiadomiony o tym, że podanie przeze mnie danych osobowych jest dobrowolne, jak również o tym, że przysługuje mi prawo do cofnięcia niniejszej zgody w każdym czasie, przy czym cofnięcie zgody na przetwarzanie danych osobowych jest równoznaczne z rezygnacją z dalszego udziału w procesach rekrutacyjnych realizowanych przez *(pełna nazwa firmy)*."</p>
+    </section>
+  </footer>
+</div>
 </body>
 
 </html>
