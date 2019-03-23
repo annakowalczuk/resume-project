@@ -27,9 +27,10 @@
     "copy:vendor": "rimraf dist/vendor && cpy \"**/*\" \"../../dist/vendor\" --cwd=src/vendor --parents",
     "copy:images": "rimraf dist/images && cpy \"**/*\" \"../../dist/images\" --cwd=src/images --parents",
     "build": "npm-run-all clean copy:* build:*",
-    "build:sass": "node-sass src/sass/*.scss --output-style compressed -o dist/css",
+    "build:sass": "node-sass src/sass/style.scss --output-style compressed -o dist/css",
+    "build:print": "node-sass src/sass/print.scss --output-style compressed -o dist/css",
     "start": "npm-run-all -p start:*",
-    "start:sass": "node-sass src/sass/style.scss --source-map true -w -o src/css",
+    "start:sass": "node-sass src/sass/*.scss --source-map true -w -o src/css",
     "start:browsersync": "browser-sync start --server src --files ./ --logLevel debug",
     "deploy": "gh-pages -d dist"
   },
